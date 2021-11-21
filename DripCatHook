@@ -1,0 +1,12 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/bGLAZv1m", true))()
+
+local Watermark = library:CreateWatermark("DripHook.cc | Dev ")
+
+local Window = library:CreateWindow("DripHook.cc", Vector2.new(492, 598), Enum.KeyCode.RightShift)
+
+local Tab = Window:CreateTab("Legit")
+
+local Sector = Tab:CreateSector("Aimbot", "left")
+local Toggle = Sector:AddToggle("Toggle", false, function(val)
+    print("Toggle", val)
+end)
